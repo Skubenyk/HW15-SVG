@@ -1,140 +1,210 @@
+/* Global */
 * {
-  margin: 0; 
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* border: 1px solid red; */
 }
-/* Загальні стилі */
+
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size:16px;
-  color:#16133D;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #16133d;
+  padding-top: 40px;
 }
+
 h1 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size:40px;
-  color:#16133D;
-  margin-left:80px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  color: #16133d;
+  margin-left: 80px;
 }
+
 svg {
-  height:35px; 
+  height: 35px;
 }
+
+/* Header */
+.header {
+  position: fixed;
+  margin-top: -20px;
+  width: 100%;
+  background: wheat;
+}
+
+/* Navigation */
+.wrapper__navigation {
+  display: flex;
+  margin-left: 40px;
+  margin-left: 80px;
+}
+
+/* Navigation link */
+.navigation__link {
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navigation__link-text {
+  margin-left: 20px;
+}
+
+/* Wrapper */
 .wrapper {
-  width:1200px;
+  display: flex;
+  margin-bottom: 70px;
+  justify-content: space-around;
+  width: 1200px;
 }
-/* Обгортка для блока сервіс */
-.container {
-  display:flex;
-  margin-bottom:70px;
-  justify-content:space-around;
-}
-.design,.ecommerce,.application {
-  width:300px;
-  border: 1px solid #3DB3701A;
-  border-radius:16px;
-}
+
+/* Design */
 .design {
-  margin-left:40px;
+  margin-left: 40px;
 }
-.application {
-  margin-right:40px;
-}
-.design__icon,.ecommerce__icon,.application__icon {
-  width:65px;
-  height:65px;
-  padding-top:15px;
-  text-align: center;
-  border: 1px solid #3DB3701A;
-  border-radius:16px;
-  margin-bottom:30px;
-  margin-left:40px;
-  margin-top:40px;
-}
-/* Стилізація іконок */
+
 .design__icon {
-  fill:#007FFC;
+  fill: #007ffc;
 }
 .design__icon:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
-.ecommerce__icon {
-  fill:#52C29D;
- }
- .ecommerce__icon:hover {
-  transform:scale(1.2);
- }
+
+/* Design,Ecommerce,Application */
+.design,
+.ecommerce,
+.application {
+  width: 300px;
+  border: 1px solid #3db3701a;
+  border-radius: 16px;
+}
+
+.design__icon,
+.ecommerce__icon,
 .application__icon {
-  fill:#007FFC;
-  margin-left:40px;
+  width: 65px;
+  height: 65px;
+  padding-top: 15px;
+  text-align: center;
+  border: 1px solid #3db3701a;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.design__title,
+.ecommerce__title,
+.application__title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+}
+
+.design__text,
+.ecommerce__text,
+.application__text {
+  margin-bottom: 30px;
+  line-height: 20px;
+  margin-left: 40px;
+}
+
+.design__link,
+.ecommerce__link,
+.application__link {
+  margin-bottom: 50px;
+  margin-left: 40px;
+}
+
+/* Ecommerce */
+.ecommerce__icon {
+  fill: #52c29d;
+}
+.ecommerce__icon:hover {
+  transform: scale(1.2);
+}
+
+/* Application */
+.application {
+  margin-right: 40px;
+}
+.application__icon {
+  fill: #007ffc;
+  margin-left: 40px;
 }
 .application__icon:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
-.design__title,.ecommerce__title,.application__title {
-  font-size:24px;
-  margin-bottom:15px;
-  margin-left:40px;
+
+/* Footer */
+.footer {
+  background-color: #16133d;
 }
-.design__text,.ecommerce__text,.application__text {
-  margin-bottom:30px;
-  line-height:20px;
-  margin-left:40px;
+
+/* Footer logo */
+.footer__logo {
+  margin-left: 80px;
 }
-.design__link,.ecommerce__link,.application__link {
-  margin-bottom:50px;
-  margin-left:40px;
+
+.footer__logo-icon {
+  width: 30px;
+  height: 30px;
+  stroke: #3db370;
+  margin-top: 35px;
+  fill: #3db370;
 }
-/* Футер */
-footer {
-  background-color:#16133D;
+
+.footer__logo-freehand {
+  width: 160px;
 }
-.futer-title {
-  font-family: 'Quicksand', sans-serif;
-  font-size:35px;
-  color:#F2F2F2;
-  margin-left:15px;
+
+/* Footer icon social media */
+.footer__icon-sm {
+  margin-top: 40px;
+  margin-left: 80px;
 }
-.icon__freehand {
-  width:30px;
-  height:30px;
-  stroke: #3DB370;
-  margin-left:80px;
-  margin-top:35px;
-  fill:#3DB370;
+
+.icon__instagram,
+.icon__facebook,
+.icon__github,
+.icon__ball,
+.icon__twitter {
+  width: 40px;
+  height: 40px;
+  background-color: #efeef3;
+  border-radius: 5px;
+  border: 1px solid #3db3701a;
+  margin-bottom: 45px;
 }
-/* Обгортка футер */
-.footer-wrapper {
-  margin-top:40px;
-  margin-left:80px;
- }
-/* Іконки соцмережі */
-.icon__instagram,.icon__facebook,.icon__github,.icon__ball,.icon__twitter {
-  width:40px;
-  height:40px;
-  background-color:#EFEEF3;
-  border-radius:5px;
-  border: 1px solid #3DB3701A;
-  margin-bottom:45px;
-}
-.icon__facebook,.icon__github,.icon__ball,.icon__twitter {
-  margin-left:10px;
+
+.icon__facebook,
+.icon__github,
+.icon__ball,
+.icon__twitter {
+  margin-left: 10px;
 }
 .icon__twitter {
-  fill: #3DB370;
+  fill: #3db370;
 }
-/* Трансформ-збільшення іконок на 20% */
+
+/* Icon social media transform*/
 .icon__instagram:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
+
 .icon__facebook:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
+
 .icon__github:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
+
 .icon__ball:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
+
 .icon__twitter:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
