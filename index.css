@@ -1,61 +1,76 @@
 /* Global */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   /* border: 1px solid red; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: #16133d;
   padding-top: 40px;
+  color: #16133d;
+  font-size: 16px;
 }
 
 h1 {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 40px;
-  color: #16133d;
   margin-left: 80px;
+  color: #16133d;
+  font-size: 40px;
 }
 
 svg {
   height: 35px;
 }
 
+a {
+  text-decoration: none;
+  color: #16133d;
+}
+
 /* Header */
 .header {
-  position: fixed;
-  margin-top: -20px;
-  width: 100%;
   background: wheat;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 /* Navigation */
 .wrapper__navigation {
-  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
   margin-left: 40px;
-  margin-left: 80px;
+  margin-top: 10px;
+  display: flex;
 }
 
 /* Navigation link */
 .navigation__link {
-  margin-top: 10px;
-  margin-left: 30px;
-  font-size: 16px;
+  margin-right: 15px;
   font-weight: bold;
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 5px;
 }
 
 .navigation__link-text {
-  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+}
+.navigation__link-text:last-child {
+  margin-right: 0;
 }
 
 /* Wrapper */
 .wrapper {
-  display: flex;
-  margin-bottom: 70px;
   justify-content: space-around;
+  margin-bottom: 70px;
+  display: flex;
   width: 1200px;
 }
 
@@ -75,31 +90,31 @@ svg {
 .design,
 .ecommerce,
 .application {
-  width: 300px;
   border: 1px solid #3db3701a;
   border-radius: 16px;
+  width: 300px;
 }
 
 .design__icon,
 .ecommerce__icon,
 .application__icon {
-  width: 65px;
-  height: 65px;
-  padding-top: 15px;
-  text-align: center;
   border: 1px solid #3db3701a;
-  border-radius: 16px;
   margin-bottom: 30px;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 15px;
   margin-left: 40px;
   margin-top: 40px;
+  height: 65px;
+  width: 65px;
 }
 
 .design__title,
 .ecommerce__title,
 .application__title {
-  font-size: 24px;
   margin-bottom: 15px;
   margin-left: 40px;
+  font-size: 24px;
 }
 
 .design__text,
@@ -130,8 +145,8 @@ svg {
   margin-right: 40px;
 }
 .application__icon {
-  fill: #007ffc;
   margin-left: 40px;
+  fill: #007ffc;
 }
 
 .application__icon:hover {
@@ -149,20 +164,20 @@ svg {
 }
 
 .footer__logo-icon {
-  width: 30px;
-  height: 30px;
   margin-top: 35px;
+  height: 30px;
+  width: 30px;
 }
 
 .footer__logo-freehand {
-  width: 160px;
   margin-left: 5px;
+  width: 160px;
 }
 
 /* Footer icon social media */
 .footer__icon-sm {
-  margin-top: 40px;
   margin-left: 80px;
+  margin-top: 40px;
 }
 
 .icon__instagram,
@@ -170,12 +185,12 @@ svg {
 .icon__github,
 .icon__ball,
 .icon__twitter {
-  width: 40px;
-  height: 40px;
-  background-color: #efeef3;
-  border-radius: 5px;
   border: 1px solid #3db3701a;
+  background-color: #efeef3;
   margin-bottom: 45px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
 }
 
 .icon__facebook,
